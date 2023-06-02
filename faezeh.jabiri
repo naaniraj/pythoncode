@@ -1,0 +1,63 @@
+import turtle
+
+draw = turtle.Turtle()
+
+def curve():
+    draw.pen(pencolor="white", pensize=3, speed=5)
+    for i in range(200):
+        draw.rt(1)
+        draw.fd(1)
+
+def heart():
+    draw.pen(pencolor="white",fillcolor="red", pensize=3, speed=5)
+    draw.shape("turtle")
+    draw.shapesize(1,1,1)
+    draw.begin_fill()
+    draw.lt(50)
+    draw.fd(113)
+    curve()
+    draw.lt(120)
+    curve()
+    draw.fd(112)
+    draw.end_fill()
+
+    draw.hideturtle()
+
+
+window = turtle.Screen()
+window.bgcolor('black')
+
+draw.penup()
+draw.goto(-80,300)
+draw.pendown()
+draw.shapesize(1,2,1)
+
+draw.pen(pencolor="white",fillcolor="yellow", pensize=3, speed=8)
+
+draw.begin_fill()
+
+draw.fd(160)
+draw.rt(90)
+draw.fd(25)
+draw.rt(90)
+draw.fd(60)
+draw.lt(90)
+
+draw.fd(140)
+draw.lt(90)
+draw.fd(60)
+draw.rt(90)
+draw.fd(25)
+draw.rt(90)
+draw.fd(160)
+draw.rt(90)
+draw.fd(25)
+draw.rt(90)
+draw.fd(60)
+draw.lt(90)
+draw.fd(140)
+draw.left(90)
+draw.fd(60)
+draw.rt(90)
+draw.fd(25)
+
