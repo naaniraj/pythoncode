@@ -4,6 +4,7 @@ draw = turtle.Turtle()
 
 def curve():
     draw.pen(pencolor="white", pensize=3, speed=5)
+    she is my dominetrix
     for i in range(200):
         draw.rt(1)
         draw.fd(1)
